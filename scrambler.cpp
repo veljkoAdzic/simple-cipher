@@ -6,42 +6,6 @@
 
 using namespace std;
 
-/*
-void printStream(short seed, short taps){
-    cout << left << setw(5) << setfill(' ') << "No.";
-    cout << left << setw(7) << setfill(' ') << "Bin.";
-    cout << left << setw(6) << setfill(' ') << "Curr";
-    cout << left << setw(5) << setfill(' ') << "Out" << endl;
-
-    //lfsr
-    short curr = seed;
-    bool bit = curr & 1;
-    int i = 0;
-
-
-    do{
-        std::bitset<LENGTH> b_cur(curr);
-        cout << left << setw(5) << setfill(' ') << (i++);
-        cout << left << setw(7) << setfill(' ') << b_cur;
-        cout << left << setw(6) << setfill(' ') << curr;
-        cout << left << setw(5) << setfill(' ') << bit << endl;
-
-        unsigned short tmp = 0;
-        for(int j = 0; j < LENGTH; j++){
-            if((taps >> j) & 1){
-                tmp ^= (curr >> j) & 1;
-            }
-        }
-
-
-        curr = (curr >> 1) | (tmp << (LENGTH-1));
-        bit = curr  & 1 ;
-
-
-    } while(curr != seed && i <= (1 << LENGTH));
-}
-*/
-
 inline void decode(unsigned short &seed, unsigned short &taps, short &BLOCK_SIZE, Cipher &engine, string &alphabet, char *chi_abc)
 {
     string original;

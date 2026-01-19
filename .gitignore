@@ -1,1 +1,7 @@
 .prettierignore
+
+*.exe
+__pycache__/
+.venv/
+
+temp.txt
