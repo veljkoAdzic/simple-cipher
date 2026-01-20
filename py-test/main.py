@@ -1,5 +1,5 @@
 
-from utils import get_taps, generate_shuffled_alphabet, calulate_needed_bit_length, prittify_decoded_text
+from utils import get_taps, calulate_needed_bit_length, prittify_decoded_text
 from lsfr import Cipher
 from scrambler import encode_text, decode_text
 

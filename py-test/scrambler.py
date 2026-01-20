@@ -54,7 +54,7 @@ def decode_text(alphabet:str, bit_length:int, text:str) -> str:
 
             res = res + alphabet[new_ind]
 
-    valid, checksum_errors = validate_checksum_verbose(res, cheksum, alphabet, BLOCK_SIZE)
+    valid, checksum_errors, bad_range = validate_checksum_verbose(res, cheksum, alphabet, BLOCK_SIZE)
 
     if not valid:
         print("[WARNING]: Checksum is invalid, content may be modified")
@@ -62,9 +62,13 @@ def decode_text(alphabet:str, bit_length:int, text:str) -> str:
         for ind in checksum_errors:
             err_indicator[ind] = "v"
         
+        bad_part = res[bad_range[0]:bad_range[1]]
+
         err_indicator = "".join(err_indicator)
-        print(err_indicator * (len(res) // BLOCK_SIZE) )
-        print(res)
+        marker = err_indicator * (len(bad_part) // BLOCK_SIZE)
+
+        print( marker )
+        print(bad_part)
 
         
 

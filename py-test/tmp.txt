@@ -105,17 +105,31 @@ _BE_LIGH = 27+ 2+ 5+27+12+ 9+ 7+8  =  97%46 = 46-5  = 41 -> 9
 T.______ = 20+28+27+27+27+27+27+27 = 210%46 = 46-26 = 20 -> T
 
   FJ!9T
-A x x x
-B  xx  
-C    xx 
+A  x x 
+B   xx  
+C     x 
 
 A =  6+30+20 = 56%46 = 46-10 = 36 -> 4
 B = 10+30    = 40%46 = 46-40 =  6 -> F
 C = 41+20    = 61%46 = 46-15 = 31 -> ?
+
 =======================================================================
 Hello my dear, I am writing to you today to tell you that I have arrived to the desert resort. It is truely remarkable and i wish you were here to witness it yourself. Alas, I miss your presance, and cannot wait to come home and see you dear. Yours truely, Robert
+2%773;B8s8t!_Ks57lx72,v%1k0yz%y3!Ua;!F2l%x_%xj??H7s2h4cafn.N1wbidvffs3x0ruqru&br0x7xfbdf!?Lrp1xt,zwsz,6k23u5@2&k26pwscypxaf_f4_,@vwuav?Nb.!,.B.!Wo1c;Wlqyy84n8qbcw_8lts6.F.Nut2t60443b,9oimoda&jmof9jil9w?,,K9&7_67e74ec941@s941!I91!H..?A*5?Bhz04gkv.0Xu@e!Gbt5&4kpv49&:;Z4O6!.D-AG
+
 2%773; B8s8t! _Ks57lx72, v% 1k0yz%y3! Ua; ! F2l%x_%xj? ? H7s 2h4cafn. N1wbidvffs3x 0ruqru&br0x7xfbdf ! ? Lrp1xt, zwsz, 6k23u5@2&k2 6 pwscypxaf_f4_, @vwua v ? Nb. ! , . B. ! Wo1c; Wlq yy 84 n 8qbcw_8lts6. F. Nut2t60 443b, 9oimoda&jmof9j il9w? , , K9&7_67e74ec941@ s9 4 1 ! I91 ! H. . ? A*5? Bhz04gkv. 0Xu@e! Gbt5&4k p v 49&:;Z4O6!.D-AG
 
+-------------------V--------------------------------- (I am)
+2%773; B8s8t! _Ks571x72, v% 1k0yz%y3! Ua; ! F2l%x_%xj? ? H7s 2h4cafn. N1wbidvffs3x 0ruqru&br0x7xfbdf ! ? Lrp1xt, zwsz, 6k23u5@2&k2 6 pwscypxaf_f4_, @vwua v ? Nb. ! , . B. ! Wo1c; Wlq yy 84 n 8qbcw_8lts6. F. Nut2t60 443b, 9oimoda&jmof9j il9w? , , K9&7_67e74ec941@ s9 4 1 ! I91 ! H. . ? A*5? Bhz04gkv. 0Xu@e! Gbt5&4k p v 49&:;Z4O6!.D-AG
+
+------------------------------------------------------------------------------------------------------------------------------------------------------V (i wish you were)                                                    
+2%773; B8s8t! _Ks57lx72, v% 1k0yz%y3! Ua; ! F2l%x_%xj? ? H7s 2h4cafn. N1wbidvffs3x 0ruqru&br0x7xfbdf ! ? Lrp1xt, zwsz, 6k23u5@2&k2 6 pwscypxaf_f4_, @vqua v ? Nb. ! , . B. ! Wo1c; Wlq yy 84 n 8qbcw_8lts6. F. Nut2t60 443b, 9oimoda&jmof9j il9w? , , K9&7_67e74ec941@ s9 4 1 ! I91 ! H. . ? A*5? Bhz04gkv. 0Xu@e! Gbt5&4k p v 49&:;Z4O6!.D-AG
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------V-------------------- (witness)
+2%773; B8s8t! _Ks57lx72, v% 1k0yz%y3! Ua; ! F2l%x_%xj? ? H7s 2h4cafn. N1wbidvffs3x 0ruqru&br0x7xfbdf ! ? Lrp1xt, zwsz, 6k23u5@2&k2 6 pwscypxaf_f4_, @vwua v ? Nb. ! , . B. ! Wo1c8 Wlq yy 84 n 8qbcw_8lts6. F. Nut2t60 443b, 9oimoda&jmof9j il9w? , , K9&7_67e74ec941@ s9 4 1 ! I91 ! H. . ? A*5? Bhz04gkv. 0Xu@e! Gbt5&4k p v 49&:;Z4O6!.D-AG
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------V-------- (and)
+2%773; B8s8t! _Ks57lx72, v% 1k0yz%y3! Ua; ! F2l%x_%xj? ? H7s 2h4cafn. N1wbidvffs3x 0ruqru&br0x7xfbdf ! ? Lrp1xt, zwsz, 6k23u5@2&k2 6 pwscypxaf_f4_, @vwua v ? Nb. ! , . B. ! Wo1c; Wlq yy 84 n 8qbcw_8lts6. F. Nut2t60 443b, 9oimoda&jmof9j il9w? , , K9&7_67e74ec941@ s9 4 1 ! L91 ! H. . ? A*5? Bhz04gkv. 0Xu@e! Gbt5&4k p v 49&:;Z4O6!.D-AG
 =======================================================================
 text:
 AAAAAAAAAAAABBBBBBBBBBBBCCCCCCCCCCCCDDDDDDDDDDDD
@@ -124,6 +138,11 @@ AAAAAAAAAAAABBBBBBBBBBBBCCCCCCCCCCCCDDDDDDDDDDDD
 checksum2: AAAAAAAAAAAABBBBBBBBBBBB
 
 checksum4: AAAAAAAAAAAACCCCCCCCCCCC
+
+HELLO_MY_DEAR,_I_AM_WRITING_TO_YOU_TODAY_TO_TELL_YOU_THAT_I_HAVE_A
+RRIVED_TO_THE_DESERT_RESORT._IT_IS_TRUELY_REMARKABLE_AND_I_WISH_YO
+U_WERE_HERE_TO_WITNESS_IT_YOURSELF._ALAS,_I_MISS_YOUR_PRESANCE,_AN
+D_CANNOT_WAIT_TO_COME_HOME_AND_SEE_YOU_DEAR._YOURS_TRUELY,_ROBERT_
 
 text = HELLO_MY_DEAR,_I_AM_WRITING_TO_YOU_TODAY_TO_TELL_YOU_THAT_I_HAVE_ARRIVED_TO_THE_DESERT_RESORT._IT_IS_TRUELY_REMARKABLE_AND_I_WISH_YOU_WERE_HERE_TO_WITNESS_IT_YOURSELF._ALAS,_I_MISS_YOUR_PRESANCE,_AND_CANNOT_WAIT_TO_COME_HOME_AND_SEE_YOU_DEAR._YOURS_TRUELY,_ROBERT_
 
@@ -144,4 +163,13 @@ text2 = HELLO_MY_DEAR,_I_AM_WRITING_TO_YOU_TODAY_TO_TELL_YOU_THAT_I_HAVE_ARRIVED
 
 text4 = HELLO_MY_DEAR,_I_AM_WRITING_TO_YOU_TODAY_TO_TELL_YOU_THAT_I_HAVE_AU_WERE_HERE_TO_WITNESS_IT_YOURSELF._ALAS,_I_MISS_YOUR_PRESANCE,_AN
 
-NOTE: Ako se podeli kako hufman enkodiranje moze da se najde u koj kvadrant e greshka, namesto u cel tekst.
+2%773; B8s8t! _Ks57lx72, v% 1k0yz%y3! Ua; ! F2l%x_%xj? ? H7s 2h4cafn. N1wbidvffs3x 0ruqru&br0x7xfbdf ! ? Lrp1xt, zwsz, 6k23u5@2&k2 6 pwscypxaf_f4_, @vwua v ? Nb. ! , . B. ! Wo1c; Wlq yy 84 n 8qbcw_8lts6. F. Nut2t60 443b, 9oimoda&jmof9j il9w? , , K9&7_67e74ec941@ s9 4 1 ! I91 ! H. . ? A*5? Bhz04gkv. 0Xu@e! Gbt5&4k p v 49&:;Z4O6!.D-,.MNTUVH-KY5REK7%-AG
+                                                                                                                              V                                                 
+2%773; B8s8t! _Ks57lx72, v% 1k0yz%y3! Ua; ! F2l%x_%xj? ? H7s 2h4cafn. N1wbidvffs3x 0ruqru&br0x7xfbdf ! ? Lrp1xt, zwsz, 6k23u5@Z&k2 6 pwscypxaf_f4_, @vwua v ? Nb. ! , . B. ! Wo1c; Wlq yy 84 n 8qbcw_8lts6. F. Nut2t60 443b, 9oimoda&jmof9j il9w? , , K9&7_67e74ec941@ s9 4 1 ! I91 ! H. . ? A*5? Bhz04gkv. 0Xu@e! Gbt5&4k p v 49&:;Z4O6!.D-,.MNTUVH-KY5REK7%-AG
+
+
+d
+2%773; B8s8t! _Ks57lx72, v% 1k0yz%y3! Ua; ! F2l%x_%xj? ? H7s 2h4cafn. N1wbidvffs3x 0ruqru&br0x7xfbdf ! ? Lrp1xt, zwsz, 6k23u5@2&k2 6 pwscypxaf_f4_, @vwua v ? Nb. ! , . B. ! Wo1c; Wlq yy 84 n 8qbcw_8lts6. F. Nut2t60 443b, 9oimoda&jmof9j il9w? , , K9&7_67e74ec941@ s9 4 1 ! I91 ! H. . ? A*5? Bhz04gkv. 0Xu@e! Gbt5&4k p v 49&:;Z4O6!.D-AG
+
+-vv----- -vv----- -vv----- -vv----- -vv----- -vv----- -vv----- -vv----- -vv-----
+_ARRIVED _TO_THE_ DESERT_R ESORT._I T_IS_TRU ELY_REMA RKABLE_A ND_I_WIS H_JOU_WE
