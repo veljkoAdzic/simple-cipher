@@ -1,5 +1,6 @@
 from math import ceil, log2
 from lsfr import Cipher
+from checksum import generate_full_checksum
 
 GOOD_TAPS = {
     2: ( 0b11 ),
@@ -25,7 +26,6 @@ ESCAPING_CHARACTERS={
 
 def calulate_needed_bit_length(alphabet:str) -> int:
     return ceil( log2( len(alphabet) ) )
-
 
 def get_taps(bits:int, seed:int):
     if bits not in GOOD_TAPS.keys():
@@ -55,7 +55,6 @@ def generate_shuffled_alphabet(engine:Cipher, aplhabet:str):
     scrambled[-1], scrambled[ind] = scrambled[ind], scrambled[-1] 
 
     return "".join(scrambled)
-
 
 def normalise_text_for_encoding(text:str, block_size:int)->str:
     res = text
@@ -95,97 +94,6 @@ def style_encoded_output(eng:Cipher, txt:str)->str:
         
     return res
 
-
-
-"""
-lrc := 0
-for each byte b in the buffer do
-    lrc := (lrc + b) and 0xFF
-lrc := (((lrc XOR 0xFF) + 1) and 0xFF)
-"""
-
-def __generate_full_checksum(txt:str, alphabet:str, block_size:int):
-    half_len = len(txt) // 2
-    forth_len = len(txt) // 4 
-    
-    text = txt
-    text2 = txt[:half_len]
-    text4 = txt[:forth_len] + txt[half_len:(half_len+forth_len)]
-
-    cf = __generate_checksum(text, alphabet, block_size)
-    ch = __generate_checksum(text2, alphabet, block_size)
-    cq = __generate_checksum(text4, alphabet, block_size)
-
-    return cf + '-' + ch + '-' + cq
-
-def __generate_checksum(txt:str, alphabet:str, block_size:int)->str:
-    res = ""
-    carry = 0
-
-    for i in range(block_size-1, -1, -1):
-        sum = carry
-        for j in range(i, len(txt), block_size):
-            sum += max(0, alphabet.find(txt[j]) )
-        
-        carry = sum // (len(alphabet)-1)
-        sum = sum % (len(alphabet)-1)
-
-        ind = ((len(alphabet)-1) - sum)
-        res = alphabet[ind]  + res
-
-    return res
-
-def validate_checksum_verbose(txt: str, checksum: str, alphabet: str, block_size: int)-> tuple[bool, list[int], tuple[int]]:
-    c_full, c_half, c_quart = checksum.split("-")
-
-    """Validate checksum and report block-level errors."""
-    block_errors = []
-
-    carry = 0
-    expected_chars = []
-
-    for col in range(block_size - 1, -1, -1):
-        s = carry
-        
-        for j in range(col, len(txt), block_size):
-            s += max(0, alphabet.find(txt[j]))
-
-        carry = s // (len(alphabet) - 1)
-        s = s % (len(alphabet) - 1)
-
-        ind = (len(alphabet) - 1) - s
-        expected_char = alphabet[ind]
-        expected_chars.append(expected_char)
-
-        # Compare against provided checksum (mirrored position)
-        actual = c_full[col]
-        if actual != expected_char:
-            block_errors.append(col)
-
-    # no error found
-    if len(block_errors) == 0:
-        return len(block_errors) == 0, block_errors, ()
-
-    # reduce what quadrant the error is in
-    half_len = len(txt) // 2
-    forth_len = len(txt) // 4 
-    
-    text_h = txt[:half_len]
-    text_q = txt[:forth_len] + txt[half_len:(half_len+forth_len)]    
-
-    half_correct = c_half == __generate_checksum(text_h, alphabet, block_size)
-    qrtr_correct = c_quart == __generate_checksum(text_q, alphabet, block_size)
-    
-    if half_correct:
-        bad_range = (half_len+forth_len, len(txt)) if qrtr_correct else (half_len, half_len+forth_len)
-    else:
-        bad_range = (forth_len, half_len) if qrtr_correct else (0, forth_len)
-
-    lo_ind = (bad_range[0] // block_size)     * block_size
-    hi_ind = (bad_range[1] // block_size + 1) * block_size
-    
-    return len(block_errors) == 0, block_errors, (lo_ind, hi_ind)
-
 def __generate_seed_enc(seed:int, alphabet:str):
     res = ""
 
@@ -199,7 +107,7 @@ def __generate_seed_enc(seed:int, alphabet:str):
     return res
 
 def generate_marker(norm_txt:str, alphabet:str, seed:int, block_size:int)->str:
-    return ":" + __generate_full_checksum(norm_txt, alphabet, block_size) + "-" + __generate_seed_enc(seed, alphabet)
+    return ":" + generate_full_checksum(norm_txt, alphabet, block_size) + "-" + __generate_seed_enc(seed, alphabet)
 
 def extract_metadata(metadata:str, alphabet:str):
     parts = metadata.split("-")
@@ -212,10 +120,12 @@ def extract_metadata(metadata:str, alphabet:str):
 
     return checksum, max(1, seed) # seed should be 0!
 
-
 def prittify_decoded_text(raw:str):
     res = raw.replace("_", " ")
 
-    res = res.lower() 
+    res = res.lower()
+
+    for char, esc in ESCAPING_CHARACTERS.items():
+        res = res.replace(esc, char) 
 
     return res

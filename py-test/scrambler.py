@@ -1,7 +1,8 @@
 from lsfr import Cipher
 from utils import generate_shuffled_alphabet
 from utils import normalise_text_for_encoding, style_encoded_output, generate_marker
-from utils import extract_metadata, get_taps, normalise_text_for_decoding, validate_checksum, validate_checksum_verbose
+from utils import extract_metadata, get_taps, normalise_text_for_decoding
+from checksum import validate_checksum_verbose
 BLOCK_SIZE = 8
 
 def encode_text(engine:Cipher, alphabet:str, text:str, seed:int) -> str:
